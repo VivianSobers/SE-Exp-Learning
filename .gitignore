@@ -1,0 +1,5 @@
+.~lock.*
+export/
+
+# instructor handout — kept locally, not tracked
+Lab1/Lab1_RE_student_handout.pdf
