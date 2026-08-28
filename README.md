@@ -1,4 +1,4 @@
-# SE Experiential Learning
+# Digital Art Commission & Watermarking Portal 
 
 Coursework for **Software Engineering (Semester 5)** · Dept. of CSE, PES University.
 One folder per lab; each folder is self-contained and carries its own README.
