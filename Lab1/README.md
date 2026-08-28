@@ -14,7 +14,7 @@ unlock only upon confirmed milestone payment.
 
 | # | Deliverable | File |
 |---|-------------|------|
-| 1 | Requirements Table (5 FRs + 2 NFRs, with traceability to use cases) | [`requirements-table.md`](requirements-table.md) |
+| 1 | Requirements Table (5 FRs + 2 NFRs, with traceability to use cases) | [`requirements-table.docx`](requirements-table.docx) · [`requirements-table.md`](requirements-table.md) |
 | 2 | UML Use-Case Diagram (draw.io source + exported renderings) | [`use-case-diagram.drawio`](use-case-diagram.drawio) · [`use-case-diagram.pdf`](use-case-diagram.pdf) · [`use-case-diagram.png`](use-case-diagram.png) · [`use-case-diagram.svg`](use-case-diagram.svg) |
 | 3 | Use-Case Flow Specification (one page) | [`use-case-flow.pdf`](use-case-flow.pdf) · [`use-case-flow.md`](use-case-flow.md) |
 
