@@ -1,93 +1,77 @@
-# Lab 2 — Agile Backlog Creation & Sprint Simulation in Jira
+# Lab 2 — Agile Backlog Creation and Sprint Simulation in Jira
 
-**Problem #58 — Digital Art Commission & Watermarking Portal**
-Jira project **DACWP** · board 35 · company-managed Scrum
+| Name | Vivian Sobers E |
+| SRN | PES1UG24CS901 |
+| Section |5 C |
+| Course | Software Engineering, Semester 5 — Dept. of CSE, PES University |
+| Problem Statement | #58 — Digital Art Commission & Watermarking Portal |
+| Jira Project | DACWP (company-managed Scrum, board 68) |
+| Simulation Period | 3 September 2026, 22:30 — 8 September 2026, 20:00 |
 
-## Backlog summary
+## 1. Epics and User Stories
 
-Lab 1's five functional requirements were decomposed into **4 Epics** and **14 User Stories**
-totalling **60 story points** (Fibonacci: 2, 3, 5, 8).
+I took the five functional requirements from Lab 1 and broke them into 4 Epics and 14 User Stories,
+which came to 60 story points. I raised three more stories while the sprints were running,
+taking the totals to 17 stories and 70 points. Every story is written in the
+*As a [role], I want [goal], So that [benefit]* form, carries a priority of High, Medium or Low,
+and is estimated on the Fibonacci scale. The backlog is ranked High, then Medium, then Low.
 
-| Epic | Stories | Points | Traces to |
-|------|---------|--------|-----------|
-| Epic 1: Commission Intake & Brief Management | DACWP-5, 6, 7 | 11 | FR-002 |
-| Epic 2: WIP Draft Delivery & IP Protection | DACWP-8, 9, 10 | 16 | FR-003, FR-001 |
-| Epic 3: Draft Review & Revision Cycle | DACWP-11, 12, 13 | 10 | FR-004 |
-| Epic 4: Milestone Payment & Final Asset Release | DACWP-14 … 18 | 23 | FR-005, NFR-001 |
+| Epic | User Stories (points) | Total | From Lab 1 |
+| Epic 1: Commission Intake & Brief Management | DACWP-5 Create Creative Brief (5) DACWP-6 Submit Brief (3) DACWP-7 Accept Commission (3) | 11 | FR-002 (UC-01) |
+| Epic 2: WIP Draft Delivery & IP Protection | DACWP-8 Upload WIP Draft (5) DACWP-9 Automatic Diagonal Watermarking (8) DACWP-10 View Watermarked Draft (3) DACWP-19 Re-watermark on Draft Replace (3) —  added mid-sprint | 19 | FR-003, FR-001 (UC-02) |
+| Epic 3: Draft Review & Revision Cycle | DACWP-11 Approve Draft (3) DACWP-12 Request Revision (5) DACWP-13 Decision Notification (2) DACWP-21 Revision Comment Thread (5) —  added mid-sprint | 15 | FR-004 (UC-03) |
+| Epic 4: Milestone Payment & Final Asset Release | DACWP-14 Pay Milestone via Gateway (8) DACWP-15 Unlock Final High-Res Asset (5) DACWP-16 Expiring Signed Download Link (5) DACWP-17 Apply Promo Code (2) DACWP-18 Handle Declined Payment (3) DACWP-20 Receipt Email (2) —  added mid-sprint | 25 | FR-005, NFR-001 (UC-04, UC-05) |
 
-## Sprint results
+## 2. Sprint Results
 
-| | Sprint 1 | Sprint 2 |
-|---|---|---|
-| Stories | 5 | 6 |
-| Committed points | 24 | 26 |
-| Completed points | 24 | 26 |
-| Completion | 100% | 100% |
+Both sprints ran in parallel over the same window, 3 September 22:30 to 8 September 20:00.
+Sprint 1 carried the intake, drafting and review work; Sprint 2 carried payment and asset release.
 
-**Velocity:** 24 then 26 points — an average of **25 points per sprint**.
-**Not delivered:** DACWP-16 (5, High), DACWP-18 (3, Medium), DACWP-17 (2, Low) — **10 points** left in the backlog.
+|  | Sprint 1 | Sprint 2 | Total |
+| Stories committed | 9 | 8 | 17 |
+| Points committed (incl. mid-sprint additions) | 38 | 32 | 70 |
+| Points completed | 33 | 27 | 60 |
+| Points carried to the next sprint | 5 | 5 | 10 |
+| Completion | 87% | 84% | 86% |
 
-## Reflection Questions
+Velocity was 33 points in Sprint 1 and 27 in Sprint 2, for 60 points in total.
+The ten points still in progress at the close (DACWP-21 Revision Comment Thread and DACWP-16 Expiring
+Signed Download Link) carry into the next sprint.
 
-### 1. Did your estimations reflect the actual effort?
+## 3. Screenshots
 
-Only partly, and the honest answer is that this simulation could not fully test them. No code
-was written, so "actual effort" was never measured against the estimates — what the exercise
-does validate is whether the *relative* sizing was coherent.
+## 4. Reflection Questions
 
-On that measure the estimates hold up. The two 8-point stories — DACWP-9 (automatic diagonal
-watermarking) and DACWP-14 (milestone payment via gateway) — are the only two that depend on
-something outside the application: an image-processing pipeline and a third-party payment
-gateway. Sizing them above everything else was right. The 2- and 3-point stories are all
-single-screen CRUD or notification work, which is genuinely small.
+### 4.1 Did your estimations reflect the actual effort?
 
-Where I would revise: DACWP-14 at 8 points is probably still under-estimated. Payment gateway
-integration carries error handling, idempotency and reconciliation work that isn't visible from
-the user story. Under planning poker, an argument for 13 would have been reasonable.
+I think the estimates were fairly accurate. Since we didn't build the system, I mainly checked
+whether the relative sizing made sense, and it did. I gave more points to the bigger jobs like
+automatic watermarking and the payment gateway, since those involve real complexity and external
+integrations, and fewer to things like basic screens or notifications. The stories I added
+mid-sprint were more of a test, but they fit the existing scale without any adjustment, so the
+sizing was at least consistent. Working in Fibonacci numbers helped too, because it stopped me
+overthinking the exact values.
 
-### 2. Was your backlog well-prioritized?
+### 4.2 Was your backlog well-prioritized?
 
-Mostly, with one clear miss. The ordering put the commission-to-payment critical path first,
-so the two sprints delivered a coherent end-to-end slice: a client can submit a brief, an artist
-can upload a watermarked draft, the client can review and approve it, pay the milestone, and have
-the final asset unlocked. That is a demonstrable product increment, which is the real test of
-prioritization.
+Yes, I think so. I ordered it around the user's journey, from submitting a brief through to
+receiving the final file, so the core flow of the system got built first. Splitting the stories into
+High, Medium and Low priority made the ordering easier to defend, and when new work came up
+mid-sprint I could slot it in without reshuffling everything around it. Most of what went unfinished
+came from those later additions, so carrying them into the next sprint seems reasonable.
 
-The miss is **DACWP-16 (Expiring Signed Download Link, 5 points, High priority)**. It carries
-NFR-001 — the 60-minute signed URL that stops paid deliverables leaking — and it was ranked High
-yet did not make either sprint. Delivering "unlock the final asset" (DACWP-15) *without* the
-expiring link means the sprint output has a security gap. Either DACWP-16 should have displaced
-a Medium story in Sprint 2, or it should have been merged into DACWP-15 as one story, since
-neither is really shippable alone.
+### 4.3 How did your simulated sprint align with your plan?
 
-The two items left behind deliberately — the promo code (Low) and declined-payment retry
-(Medium) — are the right things to defer.
+It followed the plan fairly closely. Both sprints started with the same number of points, and even
+with the extra stories added partway through, most of that work still got finished. 60 out of 70
+points felt like a solid result. Running the two sprints in parallel worked better than I expected,
+mainly because they covered different parts of the system, so neither one sat waiting on the other.
+I didn't have to drop anything from scope, and only ten points carried over.
 
-### 3. How did your simulated sprint align with your plan?
+### 4.4 What insights did the burndown chart give about your team's capacity?
 
-Exactly, which is itself the finding worth reporting. Both sprints committed to a fixed set of
-stories and completed 100% of them, because a simulation has none of the things that actually
-derail sprints: no blockers, no review feedback, no scope added mid-sprint, no story turning out
-harder than it looked, no dependency on another team.
-
-A real sprint that closes at 100% twice running is usually a signal of under-commitment rather
-than good execution. So the alignment here reflects the absence of uncertainty, not the accuracy
-of planning. The plan I would trust is the one that survives a sprint where something goes wrong.
-
-### 4. What insights did the burndown chart give about your team's capacity?
-
-Two useful ones and one caveat.
-
-**Capacity looks like roughly 25 points per sprint**, consistent across both. If that held, the
-10 remaining points would need only about half a sprint, so a third sprint would be significantly
-under-filled — the sensible response is to pull more scope in rather than run a near-empty sprint.
-
-**The step pattern shows work completing one story at a time** rather than everything landing at
-the end, which is the healthier shape: it means value was being delivered continuously instead of
-piling up against the deadline.
-
-The caveat: both sprints were configured with the handout's 1-week duration but executed in about
-40 minutes of wall-clock time. The burndown therefore drops far more steeply than the guideline
-line, and the gap between the two lines is an artifact of the compressed simulation, not evidence
-that the team ran ahead of schedule. In a real sprint that same gap would be the most useful
-signal on the chart.
+Both sprints landed close to each other, 33 points and 27, so somewhere around 30 points a sprint
+looks like a realistic capacity to plan against. The shape of the line was useful as well. It sat
+flat on the days I closed nothing and stepped down as stories moved to Done, and it ticked upward
+whenever I added a story mid-sprint, which made the cost of a scope change hard to miss. As a record
+of what actually happened in the sprint, that beats going by my own impression of it.
