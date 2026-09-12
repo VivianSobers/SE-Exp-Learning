@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1075" viewBox="0 0 1520 1075">
+<rect width="1520" height="1075" fill="#ffffff"/>
+<text x="760.0" y="44" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Digital Art Commission &amp; Watermarking Portal</text>
+<text x="760.0" y="70" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="normal" font-style="normal" text-anchor="middle" fill="#5f7088">Layered Component Architecture  ·  Problem Statement #58  ·  Vivian Sobers E (PES1UG24CS901)</text>
+<rect x="60" y="100" width="1400" height="150" rx="6" fill="#f4f7fb" stroke="#aab8cc" stroke-width="1.3" stroke-dasharray="9 5"/>
+<rect x="60" y="100" width="196" height="26" rx="4" fill="#e3e9f2" stroke="#aab8cc" stroke-width="1.1"/>
+<text x="158" y="118" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" font-style="normal" text-anchor="middle" fill="#42546e">Presentation Layer</text>
+<rect x="60" y="330" width="1400" height="200" rx="6" fill="#f4f7fb" stroke="#aab8cc" stroke-width="1.3" stroke-dasharray="9 5"/>
+<rect x="60" y="330" width="196" height="26" rx="4" fill="#e3e9f2" stroke="#aab8cc" stroke-width="1.1"/>
+<text x="158" y="348" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" font-style="normal" text-anchor="middle" fill="#42546e">Business Layer</text>
+<rect x="60" y="610" width="1400" height="190" rx="6" fill="#f4f7fb" stroke="#aab8cc" stroke-width="1.3" stroke-dasharray="9 5"/>
+<rect x="60" y="610" width="196" height="26" rx="4" fill="#e3e9f2" stroke="#aab8cc" stroke-width="1.1"/>
+<text x="158" y="628" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" font-style="normal" text-anchor="middle" fill="#42546e">Data Layer</text>
+<rect x="610" y="140" width="300" height="90" rx="3" fill="#eaf1fa" stroke="#1f3d6b" stroke-width="1.7"/>
+<rect x="876" y="152" width="22" height="16" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="871" y="155" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="871" y="161" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<text x="760.0" y="170" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#4a6fa5">&#171;component&#187;</text>
+<text x="760.0" y="192" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Portal UI Component</text>
+<text x="760.0" y="214" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5b6b82">Client Buyer / Digital Artist front end</text>
+<rect x="130" y="390" width="300" height="90" rx="3" fill="#eaf1fa" stroke="#1f3d6b" stroke-width="1.7"/>
+<rect x="396" y="402" width="22" height="16" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="391" y="405" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="391" y="411" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<text x="280.0" y="420" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#4a6fa5">&#171;component&#187;</text>
+<text x="280.0" y="442" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Watermarking Engine Component</text>
+<text x="280.0" y="464" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5b6b82">Diagonal overlay on every draft — FR-001</text>
+<rect x="610" y="390" width="300" height="90" rx="3" fill="#eaf1fa" stroke="#1f3d6b" stroke-width="1.7"/>
+<rect x="876" y="402" width="22" height="16" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="871" y="405" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="871" y="411" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<text x="760.0" y="420" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#4a6fa5">&#171;component&#187;</text>
+<text x="760.0" y="442" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Order Manager Component</text>
+<text x="760.0" y="464" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5b6b82">Briefs, drafts, approvals — FR-002/003/004</text>
+<rect x="1090" y="390" width="300" height="90" rx="3" fill="#eaf1fa" stroke="#1f3d6b" stroke-width="1.7"/>
+<rect x="1356" y="402" width="22" height="16" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="1351" y="405" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="1351" y="411" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<text x="1240.0" y="420" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#4a6fa5">&#171;component&#187;</text>
+<text x="1240.0" y="442" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Payment Service Component</text>
+<text x="1240.0" y="464" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5b6b82">Milestone authorization — FR-005</text>
+<rect x="130" y="665" width="300" height="90" rx="3" fill="#eaf1fa" stroke="#1f3d6b" stroke-width="1.7"/>
+<rect x="396" y="677" width="22" height="16" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="391" y="680" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="391" y="686" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<text x="280.0" y="695" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#4a6fa5">&#171;component&#187;</text>
+<text x="280.0" y="717" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Asset Repository Component</text>
+<text x="280.0" y="739" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5b6b82">Masters, derivatives, signed URLs — NFR-001</text>
+<rect x="610" y="665" width="300" height="90" rx="3" fill="#eaf1fa" stroke="#1f3d6b" stroke-width="1.7"/>
+<rect x="876" y="677" width="22" height="16" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="871" y="680" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<rect x="871" y="686" width="10" height="5" fill="#ffffff" stroke="#1f3d6b" stroke-width="1.3"/>
+<text x="760.0" y="695" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#4a6fa5">&#171;component&#187;</text>
+<text x="760.0" y="717" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Commission Database Component</text>
+<text x="760.0" y="739" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5b6b82">Briefs, decisions, payment references</text>
+<rect x="1090" y="880" width="300" height="80" rx="3" fill="#fdf3e3" stroke="#a5762a" stroke-width="1.7"/>
+<rect x="1356" y="892" width="22" height="16" fill="#ffffff" stroke="#a5762a" stroke-width="1.3"/>
+<rect x="1351" y="895" width="10" height="5" fill="#ffffff" stroke="#a5762a" stroke-width="1.3"/>
+<rect x="1351" y="901" width="10" height="5" fill="#ffffff" stroke="#a5762a" stroke-width="1.3"/>
+<text x="1240.0" y="910" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" text-anchor="middle" fill="#4a6fa5">&#171;external system&#187;</text>
+<text x="1240.0" y="932" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="15.5" font-weight="bold" font-style="normal" text-anchor="middle" fill="#16233a">Payment Gateway</text>
+<text x="1240.0" y="954" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5b6b82">Third-party card authorization</text>
+<polyline points="760,230 760,341" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="760,390 760,373" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="760" cy="362" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 739 362 A 21 21 0 0 1 781 362" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="790" y="352" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#11306b">ICommissionPortal</text>
+<text x="790" y="368" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="start" fill="#6b7a90">« HTTPS / REST »</text>
+<polyline points="430,425 461,425" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="610,425 504,425" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="472" cy="425" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 472 404 A 21 21 0 0 1 472 446" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="505" y="400" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#11306b">IWatermarkRenderer</text>
+<text x="505" y="416" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="start" fill="#6b7a90">« internal API »</text>
+<polyline points="1090,425 1059,425" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="910,425 1016,425" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="1048" cy="425" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 1048 404 A 21 21 0 0 0 1048 446" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="922" y="400" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#11306b">IPaymentProcessing</text>
+<text x="922" y="416" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="start" fill="#6b7a90">« internal API »</text>
+<polyline points="340,665 340,648" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="340,480 340,616" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="340" cy="637" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 319 637 A 21 21 0 0 1 361 637" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="368" y="578" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#11306b">IAssetStore</text>
+<text x="368" y="594" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="start" fill="#6b7a90">« object store PUT »</text>
+<polyline points="430,710 461,710" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="610,455 540,455 540,710 504,710" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="472" cy="710" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 472 689 A 21 21 0 0 1 472 731" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="552" y="556" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#11306b">ISignedAssetUrl</text>
+<text x="552" y="572" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="start" fill="#6b7a90">« 60-minute expiring URL »</text>
+<polyline points="800,665 800,648" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="800,480 800,616" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="800" cy="637" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 779 637 A 21 21 0 0 1 821 637" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="828" y="578" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#11306b">ICommissionData</text>
+<text x="828" y="594" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="start" fill="#6b7a90">« SQL / JDBC »</text>
+<polyline points="910,710 941,710" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="1180,480 1180,710 984,710" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="952" cy="710" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 952 689 A 21 21 0 0 1 952 731" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="1168" y="556" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="end" fill="#11306b">IPaymentRecords</text>
+<text x="1168" y="572" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#6b7a90">« SQL / JDBC »</text>
+<polyline points="1300,880 1300,863" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="1300,480 1300,831" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="1300" cy="852" r="11" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<path d="M 1279 852 A 21 21 0 0 1 1321 852" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="1322" y="700" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#11306b">IGatewayAuth</text>
+<text x="1322" y="716" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="start" fill="#6b7a90">« HTTPS »</text>
+<rect x="60" y="880" width="440" height="150" rx="5" fill="#fbfcfe" stroke="#aab8cc" stroke-width="1.2"/>
+<text x="78" y="908" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" text-anchor="start" fill="#16233a">Notation</text>
+<circle cx="94" cy="938" r="9" fill="#ffffff" stroke="#111820" stroke-width="1.8"/>
+<text x="118" y="943" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#3d4a5e">Provided interface (ball) — service a component offers</text>
+<path d="M 94 959 A 13 13 0 0 0 94 985" fill="none" stroke="#111820" stroke-width="1.8"/>
+<text x="118" y="977" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#3d4a5e">Required interface (socket) — service a component needs</text>
+<polyline points="82,1004 108,1004" fill="none" stroke="#111820" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="118" y="1009" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#3d4a5e">Assembly connector — socket consumes the ball it cups</text>
+<path d="M 545 880 L 1023 880 L 1045 902 L 1045 1030 L 545 1030 Z" fill="#fffdf2" stroke="#c3b27a" stroke-width="1.2"/>
+<path d="M 1023 880 L 1023 902 L 1045 902" fill="none" stroke="#c3b27a" stroke-width="1.2"/>
+<text x="563" y="910" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="bold" font-style="normal" text-anchor="start" fill="#6b5a1e">Key architectural constraint</text>
+<text x="563" y="936" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#4a4738">Every draft leaves the Watermarking Engine before the Portal</text>
+<text x="563" y="955" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#4a4738">UI can render it, and the Asset Repository issues a signed URL</text>
+<text x="563" y="974" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#4a4738">for the watermark-free master only after the Payment Service</text>
+<text x="563" y="993" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#4a4738">has recorded a gateway authorization for that milestone.</text>
+<text x="563" y="1012" font-family="Liberation Sans, DejaVu Sans, Arial, sans-serif" font-size="11.5" font-weight="normal" font-style="normal" text-anchor="start" fill="#4a4738">The Presentation Layer never reaches the Data Layer directly.</text>
+</svg>
