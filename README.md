@@ -9,3 +9,4 @@ scenario, Problem #58.
 | Lab 1 | Requirements Engineering & UML Use-Case Modelling — *Digital Art Commission & Watermarking Portal* (Problem #58) | [`Lab1/`](Lab1/) |
 | Lab 2 | Agile Backlog Creation & Sprint Simulation in Jira | [`Lab2/`](Lab2/) |
 | Lab 3 | Component Modelling & Architectural Pattern Selection | [`Lab 3/`](Lab%203/) |
+| Lab 4 | Vibe Coding — fixing and extending a Match-3 Gem Swap game (repo #57) | [`Lab-4/`](Lab-4/) |
