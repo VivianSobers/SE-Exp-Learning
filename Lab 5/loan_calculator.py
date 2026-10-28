@@ -1,5 +1,4 @@
 import os
-import math
 import base64
 import http.client
 import json
@@ -14,6 +13,7 @@ applications = {}
 MAX_FOIR = 0.5
 BUREAU_HOST = "upload.creditbureau.example"
 
+
 def calculateEMI(principal, annual_rate, years):
     r = annual_rate / 12
     n = years * 12
@@ -22,7 +22,9 @@ def calculateEMI(principal, annual_rate, years):
     emi = principal * r * (1 + r) ** n / ((1 + r) ** n - 1)
     return emi
 
-def checkEligibility(age, income, credit_score, existing_emi, loan_type, history=[]):
+
+def checkEligibility(age, income, credit_score, existing_emi, loan_type,
+                     history=[]):
     history.append(loan_type)
     if age < 21 or age > 60:
         return False
@@ -32,12 +34,14 @@ def checkEligibility(age, income, credit_score, existing_emi, loan_type, history
         return False
     return credit_score > 750 or income > 25000
 
+
 def maxLoanAmount(income, existing_emi, annual_rate, years):
     available = income * MAX_FOIR - existing_emi
     if available <= 0:
         return 0
     # Largest principal whose EMI equals the affordable amount
     return available / calculateEMI(1, annual_rate, years)
+
 
 def amortisationSchedule(principal, annual_rate, years):
     emi = calculateEMI(principal, annual_rate, years)
@@ -49,16 +53,23 @@ def amortisationSchedule(principal, annual_rate, years):
         rows.append((month, round(interest, 2), round(balance, 2)))
     return rows
 
+
 def applicationId():
     return "LN-" + str(10000000 + secrets.randbelow(90000000))
 
+
 def saveApplication(name, amount, file="loans.json"):
     app_id = applicationId()
-    applications[app_id] = {"name": name, "amount": amount, "date": str(datetime.now())}
+    applications[app_id] = {
+        "name": name,
+        "amount": amount,
+        "date": str(datetime.now()),
+    }
     f = open(file, "w", encoding="utf-8")
     json.dump(applications, f, indent=2)
     f.close()
     return app_id
+
 
 def loadApplications(file="loans.json"):
     global applications
@@ -68,6 +79,7 @@ def loadApplications(file="loans.json"):
     f = open(file, "r", encoding="utf-8")
     applications = json.load(f)
     f.close()
+
 
 def uploadToBureau(report_path, user="loanops"):
     # Credentials come from the environment, never from the source code
@@ -94,6 +106,7 @@ def uploadToBureau(report_path, user="loanops"):
     if status >= 300:
         raise RuntimeError(f"Bureau upload failed with HTTP {status}")
 
+
 def notifyApplicant(email, status):
     # Send through SMTP with STARTTLS instead of shelling out to `mail`
     message = EmailMessage()
@@ -106,12 +119,15 @@ def notifyApplicant(email, status):
         smtp.starttls(context=ssl.create_default_context())
         smtp.send_message(message)
 
+
 def interestSaved(principal, annual_rate, years, prepayment):
     original = calculateEMI(principal, annual_rate, years) * years * 12
     prepayment = min(prepayment, principal)
-    reduced = calculateEMI(principal - prepayment, annual_rate, years) * years * 12
+    reduced = (calculateEMI(principal - prepayment, annual_rate, years)
+               * years * 12)
     # The prepaid principal is not interest, so take it out of the saving
     return (original - reduced - prepayment)
+
 
 def riskBand(credit_score):
     if credit_score > 900:
@@ -127,17 +143,22 @@ def riskBand(credit_score):
     else:
         return "INVALID"
 
+
 def main():
     print("EMI for 5L @ 9% for 5 years:", calculateEMI(500000, 0.09, 5))
-    print("Eligible (score 760, income 15000, EMIs 12000):", checkEligibility(35, 15000, 760, 12000, "personal"))
-    print("Eligible (unknown loan type 'crypto'):", checkEligibility(30, 80000, 650, 0, "crypto"))
+    print("Eligible (score 760, income 15000, EMIs 12000):",
+          checkEligibility(35, 15000, 760, 12000, "personal"))
+    print("Eligible (unknown loan type 'crypto'):",
+          checkEligibility(30, 80000, 650, 0, "crypto"))
     print("Max loan for income 40000:", maxLoanAmount(40000, 5000, 0.09, 5))
     print("Last schedule row:", amortisationSchedule(100000, 0.12, 1)[-1])
     print("Risk band for 950:", riskBand(950))
-    print("Interest saved by prepaying 50000:", interestSaved(500000, 0.09, 5, 50000))
+    print("Interest saved by prepaying 50000:",
+          interestSaved(500000, 0.09, 5, 50000))
     print("Saved as:", saveApplication("Anil", 500000))
     loadApplications()
     print("Applications on file:", len(applications))
-    print(f"Upload to bureau skipped (no network)")
+    print("Upload to bureau skipped (no network)")
+
 
 main()
