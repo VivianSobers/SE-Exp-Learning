@@ -8,7 +8,6 @@ Assigned repo: [SETAPESU26/L5_57_loan-eligibility](https://github.com/SETAPESU26
 | [`before/`](before/) | Pylint, Bandit and Flake8 reports on the original script |
 | [`after/`](after/) | The same reports on the final script. `flake8_report.txt` is empty because Flake8 prints nothing when it finds no issues |
 | [`issues.md`](issues.md) | Issue table |
-| [`reflection.md`](reflection.md) | Answers to the reflection questions |
 
 | Tool | Before | After |
 |------|--------|-------|
