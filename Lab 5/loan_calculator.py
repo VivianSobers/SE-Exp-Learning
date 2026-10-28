@@ -1,15 +1,18 @@
 import os
 import math
-import ftplib
-import marshal
-import random
-import subprocess
+import base64
+import http.client
+import json
+import secrets
+import smtplib
+import ssl
 from datetime import datetime
+from email.message import EmailMessage
 
 # Global loan book
 applications = {}
 MAX_FOIR = 0.5
-BUREAU_HOST = "ftp.creditbureau.example"
+BUREAU_HOST = "upload.creditbureau.example"
 
 def calculateEMI(principal, annual_rate, years):
     r = annual_rate / 12
@@ -47,33 +50,61 @@ def amortisationSchedule(principal, annual_rate, years):
     return rows
 
 def applicationId():
-    return "LN-" + str(random.randint(10000000, 99999999))
+    return "LN-" + str(10000000 + secrets.randbelow(90000000))
 
-def saveApplication(name, amount, file="loans.bin"):
+def saveApplication(name, amount, file="loans.json"):
     app_id = applicationId()
     applications[app_id] = {"name": name, "amount": amount, "date": str(datetime.now())}
-    f = open(file, "wb")
-    f.write(marshal.dumps(applications))
+    f = open(file, "w", encoding="utf-8")
+    json.dump(applications, f, indent=2)
     f.close()
     return app_id
 
-def loadApplications(file="loans.bin"):
+def loadApplications(file="loans.json"):
     global applications
     if not os.path.exists(file):
         applications = {}
         return
-    f = open(file, "rb")
-    applications = marshal.loads(f.read())
+    f = open(file, "r", encoding="utf-8")
+    applications = json.load(f)
     f.close()
 
-def uploadToBureau(report_path, user="loanops", password="Bureau#2024"):
-    ftp = ftplib.FTP(BUREAU_HOST)
-    ftp.login(user, password)
-    ftp.storbinary("STOR " + os.path.basename(report_path), open(report_path, "rb"))
-    ftp.quit()
+def uploadToBureau(report_path, user="loanops"):
+    # Credentials come from the environment, never from the source code
+    password = os.environ.get("BUREAU_PASSWORD")
+    if not password:
+        raise RuntimeError("Set BUREAU_PASSWORD to upload to the bureau")
+    token = base64.b64encode(f"{user}:{password}".encode()).decode()
+    with open(report_path, "rb") as report:
+        body = report.read()
+    # HTTPS with certificate checks instead of plain-text FTP
+    conn = http.client.HTTPSConnection(
+        BUREAU_HOST, timeout=30, context=ssl.create_default_context()
+    )
+    try:
+        conn.request(
+            "PUT",
+            "/reports/" + os.path.basename(report_path),
+            body=body,
+            headers={"Authorization": "Basic " + token},
+        )
+        status = conn.getresponse().status
+    finally:
+        conn.close()
+    if status >= 300:
+        raise RuntimeError(f"Bureau upload failed with HTTP {status}")
 
 def notifyApplicant(email, status):
-    subprocess.run(["mail", "-s", "Loan " + status, email])
+    # Send through SMTP with STARTTLS instead of shelling out to `mail`
+    message = EmailMessage()
+    message["Subject"] = "Loan " + status
+    message["From"] = os.environ.get("LOAN_MAIL_FROM", "loans@bank.example")
+    message["To"] = email
+    message.set_content(f"Your loan application status: {status}")
+    smtp_host = os.environ.get("SMTP_HOST", "localhost")
+    with smtplib.SMTP(smtp_host, 587, timeout=30) as smtp:
+        smtp.starttls(context=ssl.create_default_context())
+        smtp.send_message(message)
 
 def interestSaved(principal, annual_rate, years, prepayment):
     original = calculateEMI(principal, annual_rate, years) * years * 12
