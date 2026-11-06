@@ -11,3 +11,4 @@ scenario, Problem #58.
 | Lab 3 | Component Modelling & Architectural Pattern Selection | [`Lab 3/`](Lab%203/) |
 | Lab 4 | Vibe Coding — fixing and extending a Match-3 Gem Swap game (repo #57) | [`Lab-4/`](Lab-4/) |
 | Lab 5 | Static Code Analysis with Pylint, Bandit and Flake8 — Loan Eligibility calculator (repo #57) | [`Lab 5/`](Lab%205/) |
+| Lab 6 | Code and Branch Coverage with coverage.py and pytest — Income Tax calculator (repo #57) | [`Lab 6/`](Lab%206/) |
