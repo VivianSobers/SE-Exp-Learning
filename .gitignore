@@ -15,3 +15,7 @@ Lab 5/loans.json
 __pycache__/
 
 Lab2/reflection.md
+Lab 6/Lab_6_Code&BranchCoverage_Student_Handout.pdf
+Lab 6/Lab-6-7-Repo-Assignment- C-Sec.pdf
+.coverage
+.pytest_cache/
