@@ -1,15 +1,15 @@
-# Digital Art Commission & Watermarking Portal 
+# Software Engineering Labs
 
-Coursework for **Software Engineering (Semester 5)** · Dept. of CSE, PES University.
-One folder per lab; each folder is self-contained. Every lab builds on the same
-scenario, Problem #58.
+Coursework for Software Engineering (Semester 5), Dept. of CSE, PES University. Each lab has its own folder.
+
+Labs 1 to 3 build on the same scenario, Problem #58: a Digital Art Commission & Watermarking Portal. From Lab 4 on, each lab starts from a repository the course assigns, which was repo #57 every time.
 
 | Lab | Topic | Folder |
 |-----|-------|--------|
-| Lab 1 | Requirements Engineering & UML Use-Case Modelling — *Digital Art Commission & Watermarking Portal* (Problem #58) | [`Lab1/`](Lab1/) |
-| Lab 2 | Agile Backlog Creation & Sprint Simulation in Jira | [`Lab2/`](Lab2/) |
-| Lab 3 | Component Modelling & Architectural Pattern Selection | [`Lab 3/`](Lab%203/) |
-| Lab 4 | Vibe Coding — fixing and extending a Match-3 Gem Swap game (repo #57) | [`Lab-4/`](Lab-4/) |
-| Lab 5 | Static Code Analysis with Pylint, Bandit and Flake8 — Loan Eligibility calculator (repo #57) | [`Lab 5/`](Lab%205/) |
-| Lab 6 | Code and Branch Coverage with coverage.py and pytest — Income Tax calculator (repo #57) | [`Lab 6/`](Lab%206/) |
-| Lab 7 | Fuzzing for Input Validation Bugs with Hypothesis — Income Tax parser (repo #57) | [`Lab 7/`](Lab%207/) |
+| Lab 1 | Requirements engineering and UML use-case modelling | [`Lab1/`](Lab1/) |
+| Lab 2 | Agile backlog creation and sprint simulation in Jira | [`Lab2/`](Lab2/) |
+| Lab 3 | Component modelling and architectural pattern selection | [`Lab 3/`](Lab%203/) |
+| Lab 4 | Vibe coding: fixing and extending a Match-3 Gem Swap game | [`Lab-4/`](Lab-4/) |
+| Lab 5 | Static code analysis of a loan eligibility calculator with Pylint, Bandit and Flake8 | [`Lab 5/`](Lab%205/) |
+| Lab 6 | Code and branch coverage of an income tax calculator with coverage.py and pytest | [`Lab 6/`](Lab%206/) |
+| Lab 7 | Fuzzing an income tax parser for input validation bugs with Hypothesis | [`Lab 7/`](Lab%207/) |
